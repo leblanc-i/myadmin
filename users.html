@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--ck editeur-->
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+
+        <title>Users</title>
+
+  </head>
+
+  <body>
+    <header>
+        <div class="navbar-fixed">
+            <nav style="background-color: rgb(21,102,185);">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Myadmin</a>
+                        <a href="#" data-target="mobile-nav" class="right sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="post.html">Posts</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="comment.html">Comments</a></li>
+                            <li><a href="users.html">Users</a></li>
+                            <li>
+                                <a href="#"><i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-nav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="bg.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="ico-1.png"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="index.html"><i class="material-icons">dashboard</i> Dashboard</a></li>
+            <li><a href="post.html">Posts</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="comment.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li style="border-top: solid 1px rgb(198, 191, 191);"><a class="grey-text" href="#">Account Controls</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </header>
+
+    <!--Section Categories-->
+    <section class="grey lighten-3" style="padding-top: 50px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <table>
+                        <h5 style="margin-top: 0;">Users</h5>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Registered</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="grey lighten-3">
+                                <td><img src="ico-1.png" style="width: 40px;">Mamane Sani</td>
+                                <td>Web Development</td>
+                                <td>msani@gmail.com</td>
+                                <td>Oct 1, 2019</td>
+                                <td>
+                                    <a class="waves-effect waves-light btn" style="background-color: rgb(97,166,226);">Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="ico-2.png" style="width: 40px;">Rachida Zakou</td>
+                                <td>Graphic Design</td>
+                                <td>chida@gmail.com</td>
+                                <td>Oct 2, 2019</td>
+                                <td>
+                                    <a class="waves-effect waves-light btn" style="background-color: rgb(97,166,226);">Details</a>
+                                </td>
+                            </tr>
+                            <tr class="grey lighten-3">
+                                <td> <img src="ico-3.png" style="width: 40px;">Yasmine Abani</td>
+                                <td>Web Development</td>
+                                <td>Abani@gmail.com</td>
+                                <td>Oct 3, 2019</td>
+                                <td>
+                                    <a class="waves-effect waves-light btn" style="background-color: rgb(97,166,226);">Details</a>
+                                </td>
+                            </tr>
+                            <tr style="border-bottom: white;">
+                                <td><img src="ico-4.png" style="width: 40px;">Charif Ahmed</td>
+                                <td>Tech Gadgets</td>
+                                <td>med@gmail.com</td>
+                                <td>Oct 5, 2019</td>
+                                <td>
+                                    <a class="waves-effect waves-light btn" style="background-color: rgb(97,166,226);">Details</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-action">
+                    <ul class="pagination">
+                        <li class="waves-effect"><a class="blue-text" href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="waves-effect active blue"><a class="white-text" href="#">1</a></li>
+                        <li class="waves-effect"><a class="blue-text" href="#!">2</a></li>
+                        <li class="waves-effect"><a class="blue-text" href="#!">3</a></li>
+                        <li class="waves-effect"><a class="blue-text" href="#!">4</a></li>
+                        <li class="waves-effect"><a class="blue-text" href="#!">5</a></li>
+                        <li class="waves-effect"><a class="blue-text" href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="center white-text" style="background-color: rgb(21,102,185); padding: 30px; position: fixed; bottom: 0; width: 100%;">
+        <h6>
+            MyAdmin Codeloccol Copyright © 2019
+        </h6>
+    </footer>
+    
+    <!--Floating Action Buton-->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <!--Modal Trigger-->
+            <li><a class="btn-floating blue btn modal-trigger" href="#modal1"><i class="material-icons">edit</i></a></li>
+            <li><a class="btn-floating blue btn modal-trigger" href="#modal2"><i class="material-icons">folder</i></a></li>
+            <li><a class="btn-floating blue btn modal-trigger" href="#modal3"><i class="material-icons">supervisor_account</i></a></li>
+        </ul>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Add Post</h4>
+            <div class="input-field">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Title</label>
+            </div>
+            <div class="input-field">
+                <select>
+                    <optgroup label="team 1">
+                        <option value="" disabled selected>Select option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </optgroup>
+                </select>
+                <label>Category</label>
+                <h6>Body</h6>
+                <div id="editor">
+                    <p>This is some sample content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat blue white-text">SUBMIT</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Add Category</h4>
+            <div class="input-field">
+                <input id="Category" type="text" class="validate">
+                <label for="Category">Title</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat blue white-text">SUBMIT</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Add User</h4>
+            <div class="input-field">
+                <input id="Name" type="text" class="validate">
+                <label for="Name">Name</label>
+            </div>
+            <div class="input-field">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+                <input id="c password" type="password" class="validate">
+                <label for="c password">Confirme Password</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat blue white-text">SUBMIT</a>
+        </div>
+    </div>
+        
+    <!--Graph Script-->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+     <!--Script ck editor-->
+     <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+
+    <script>
+
+    // Sidenav
+        var sidenav = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(sidenav, {});
+
+    // Boutton Floater
+        var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {});
+
+    // Modal
+        var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {});
+
+    // Select Input
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, {});
+   
+    </script>
+  </body>
+</html>
